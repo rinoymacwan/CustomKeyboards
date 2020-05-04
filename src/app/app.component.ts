@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CustomKeyboards';
+  public isMenuCollapsed = true;
+  navbarOpen = false;
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
 }
